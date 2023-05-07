@@ -28,11 +28,12 @@
     margin-bottom: 30px;
 }
 form{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .email{
     padding: 10px 6px;
-   width: 60%;
+    width: 60%;
+    margin-bottom: 20px;
 }
 /* businnes end */
 
@@ -102,6 +103,7 @@ form{
 .contact_title{
     text-align: center;
     color: var(--title-color);
+    padding: 0 20px;
 }
 .contact ul{
     list-style: none;
