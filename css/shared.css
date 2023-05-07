@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Atkinson+Hyperlegible:wght@400;700&family=Average+Sans&family=Barlow:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&family=DM+Serif+Display&family=Livvic:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&family=Montserrat:wght@200;300;400;500;600;700;800&family=Nanum+Gothic&family=Nunito+Sans:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600&family=Poppins:wght@200;300;400;500;600;700;800&family=Public+Sans:wght@200;300;400;500&family=Roboto+Slab:wght@200;300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1240px;
+    margin: 0 auto;
+}
+.hero{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'poppins';
+}
+.hero_logo{
+    display: flex;
+    align-items: center;
+}
+.hero_logo h2{
+    margin-left: 5px;
+    color: var(--title-color);
+}
+.navbar{
+    display: flex;
+}
+.nav_list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav_item{
+    padding: 0 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+}
+.nav_link{
+    text-decoration: none;
+    color: var(--title-color);
+}
+.nav_link:hover{
+    color: #3170a4;
+}
+.send{
+    display: flex;
+    align-items: center;
+}
+.sign_in{
+    cursor: pointer;
+    transition: .4s ease all;
+}
+.sign_in a{
+    color:var(--text-color);
+    text-decoration: none;
+    font-weight: normal;
+    font-weight: 600;
+    transition: .4s all ease;
+}
+.sign_in:hover{
+    background-color: #173A56;
+}
+.sign_in:hover a{
+    color: #fff;
+}
+.sign_in{
+    padding: 9px 29px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    background-color: #BCD0E5;
+}
+.sign_up{
+    padding: 9px 29px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    margin: 0 10px;
+    background: #02897A;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+.sign_up  a{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.sign_up:hover{
+    background-color: #BCD0E5;
+}
+.sign_up:hover a{
+    color: #173A56;
+}
+#light{
+    cursor: pointer;
+}
+
+:root{
+    --title-color:#22343D;
+    --btn-color:#fff;
+    --btn_color:#02897A;
+    --bg-color:#fff;
+ }
+ .dark{
+     --bg-color:#374257;
+     --title-color:#fff;
+ }
+
+
+@media screen and (max-width:460px) {
+ .container{
+        width: 96%;
+    }
+ .navbar{
+        display:block;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background-color:rgb(76, 107, 109);
+        opacity: 0.97;
+        transition: .5s all ease;
+    }
+    .show{
+        right: 0;
+    }
+    .nav_list{
+        padding-top: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+ .menu{
+        display: block;
+        cursor: pointer;
+        font-size: 45px;
+        z-index: 100;
+    }
+ .send{
+        flex-direction: column;
+    }
+ .send button{
+        margin:0 0 15px 0;
+    }
+
+    /* works start */
+.work{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'poppins';
+}
+.work_pic img{
+    width: 100%;
+}
+.work_describe{
+    padding-top: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.work_describe h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size:36px;
+    line-height: 60px;
+    color: var(--title-color);
+    margin-bottom: 12px;
+}
+.work_describe p{
+    padding: 0 13px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 12px;
+}
+.learn{
+   justify-content: center;
+}
+
+/* product start */
+.product_box{
+    display: grid;
+    grid-template-columns:1fr;
+    text-align: center;
+}
+.product_box p{
+    padding: 0 45px;
+}
+.product_info{
+    margin-bottom: 50px;
+}
+/* product end */
+
+/* management start */
+.management_about{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+.management_title h3{
+    margin-bottom: 30px;
+}
+.management_pic img{
+    width: 100%;
+}
+/* management end */
+
+
+/* customer start */
+.customer{
+    margin-bottom: 40px;
+}
+.customer_describe{
+    display: grid;
+    grid-template-columns:1fr;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.customer_pic img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.customer_item p{
+    padding-right:40px;
+}
+/* customer end */
+
+
+/* Collaborative start */
+.Collaborative{
+    border-top: 1px solid rgb(176, 176, 176);
+    font-family: 'poppins';
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+.Collaborative_about{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.collaborative_pic img{
+    width: 100%;
+}
+
+/* Process start */
+.Process{
+    margin-bottom: 40px;
+    background-image: none;
+}
+.Process p{
+    margin-bottom: 20px;
+}
+.Process_about{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.people_pic{
+    margin-bottom: 30px;
+}
+.people_pic img{
+    width: 100%;
+}
+/* Process end */
+
+/* contents start */
+.contents{
+    font-family: 'poppins';
+    margin-bottom: 50px;
+}
+.contents h3{
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.contents_box{
+    display:block;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content{
+    width: 330px;
+    height: 360px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.content:hover{
+    transform: scale(1);
+}
+
+/* price_section start */
+.price_section{
+    margin-bottom: 50px;
+}
+.price_box{
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+.price{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+/* price_section end */
+
+/* clients start */
+.clients{
+    font-family: 'poppins';
+    margin-bottom: 30px;
+}
+.client_about{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.client{
+    margin-bottom: 30px;
+}
+/* clients end */
+
+/* join start */
+.join{
+    font-family: 'poppins';
+    margin-bottom: 50px;
+}
+.joining{
+    background: #02897A;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+    border-radius: 32px;
+}
+.join_info h2{
+    padding: 20px 25px;
+    font-size: 32px;
+}
+.join_pic img{
+    width: 100%;
+}
+/* join end*/
+
+
+/* footer start */
+.footer_list{
+    display: grid;
+    grid-template-columns:1fr;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.network{
+    margin-bottom: 35px;
+    display: block;
+    margin: 0 auto;
+}
+.network_list{
+    margin-left: 20px;
+}
+.Resource_list{
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.legal_list{
+    margin-bottom: 25px;
+}
+.last_p{
+    display: none;
+}
+.energy p{
+    padding: 0 50px;
+}
+/* footer end */
+
+
+/* CUSTOMER.HTML START */
+/* company start */
+.company{
+    font-family: 'poppins';
+    padding-top: 30px;
+    margin-bottom: 90px;
+}
+.logo_item{
+    margin-bottom: 20px;
+}
+.logo_item img{
+    padding:10px 30px;
+}
+/* company end */
+
+/* choose start */
+.choose{
+    font-family: 'poppins';
+    padding-top: 20px;
+    margin-bottom: 70px;
+}
+.choose_box{
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns:1fr;
+}
+.choose_info{
+    margin-bottom: 20px;
+}
+/* choose end */
+
+/* product start */
+.products{
+    font-family: 'poppins';
+    margin-bottom: 50px;
+}
+.product_describe{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 100px;
+    padding-left: 10px;
+}
+.product_describe img{
+    width: 100%;
+}
+.products button{
+    margin-top: 50px;
+}
+/* product end */
+
+/* thoughts start */
+.thoughts{
+    font-family: 'poppins';
+    margin-bottom: 40px;
+}
+.thoughts_box{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.thoughts_info{
+    margin-bottom: 50px;
+}
+/* thoughts end*/
+
+
+/*  CUSTOMER.HTML END */
+
+
+/* PRICING.HTML STAR */
+.pricing{
+    padding-top: 40px;
+}
+.pricing h4{
+    font-size: 24px;
+}
+.pricing h2{
+    font-size: 32px;
+}
+.enterprice{
+    margin-bottom: 90px;
+}
+.enterprice h2{
+    font-size: 34px;
+}
+/* effects start */
+.effects{
+    font-family: 'poppins';
+    margin-bottom: 80px;
+}
+.effects_about{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.pic img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* questions start */
+.questions{
+    font-family: 'poppins';
+    margin-bottom: 100px;
+}
+.question_title{
+    padding: 0 12px;
+}
+.question_list{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.question_item1 p{
+    padding-right: 20px;
+}
+/* questions end */
+/* PRICING.HTML END */
+
+/* RESOURCES.HTML START */
+/* businnes start */
+#businnes{
+    font-family: 'poppins';
+    padding-top: 20px;
+}
+.businnes{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.businnes_info{
+    padding: 0 25px;
+}
+.businnes_photo img{
+    width: 100%;
+}
+/* businnes end */
+
+/* stories start */
+#stories{
+    font-family: 'poppins';
+    margin-bottom: 100px;
+}
+.stories{
+    display: grid;
+    grid-template-columns:1fr;
+    row-gap: 40px;
+    column-gap: 50px;
+}
+/* stories end */
+
+/* contact start */
+.navigator_pic img{
+    width: 100%;
+}
+/* contact end */
+
+/* message start */
+.message{
+    width: 90%;
+}
+.form input{
+    width: 95%;
+}
+/* message end */
+/* RESOURCES.HTML END */
+
+}

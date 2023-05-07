@@ -1,0 +1,140 @@
+/* company start */
+.company{
+    font-family: 'poppins';
+    padding-top: 80px;
+    margin-bottom: 90px;
+}
+.company h1{
+    text-align: center;
+    color: var(--title-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+}
+.logo_list{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding-top: 70px;
+   flex-wrap: wrap;
+}
+/* company end */
+
+/* choose start */
+.choose{
+    font-family: 'poppins';
+    padding-top: 40px;
+    margin-bottom: 100px;
+}
+.choose h1{
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    color: var(--title-color);
+}
+.choose_box{
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.choose_info{
+    text-align: center;
+    padding: 10px 40px;
+}
+.choose_info h4{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 15px;
+}
+/* choose end */
+
+/* products start */
+.products{
+    font-family: 'poppins';
+    margin-bottom: 100px;
+}
+.products h2{
+    text-align: center;
+    color: var(--title-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    margin-bottom: 60px;
+}
+.product_describe{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 100px;
+}
+.product_infos h4{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.product_infos h3{
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+.product_infos p{
+    padding: 0 50px 0 0;
+}
+.products button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 10px 35px;
+    cursor: pointer;
+    border-radius: 14px;
+    background: #396e9c;
+    color: #fff;
+    border: 0;
+    transition: .5s;
+}
+.products button:hover{
+    background-color: #3981c1;
+} 
+/* products end */
+
+/* thoughts start */
+.thoughts{
+    font-family: 'poppins';
+    margin-bottom: 100px;
+}
+.thoughts h2{
+    text-align: center;
+    color: var(--title-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.thoughts_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+.thoughts_info img{
+    margin-bottom: 25px;
+}
+.thoughts_info h4{
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+.types{
+    list-style: none;
+}
+.item{
+    margin-bottom: 20px;
+    color: var(--title-color);
+}
+/* thoughts end */

@@ -1,0 +1,140 @@
+/* pricing start */
+.pricing{
+    padding-top: 100px;
+}
+.pricing h2{
+    text-align: center;
+    color: var(--title-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+/* pricing end */
+
+/* enterprice start */
+.enterprice{
+    font-family: 'poppins';
+    padding-top: 90px;
+    text-align: center;
+    margin-bottom: 190px;
+}
+.enterprice h4{
+    color: var(--title-color);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+.enterprice h2{
+    color: var(--title-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    margin-bottom: 15px;
+}
+.enterprice p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+.enterprice button{
+    padding: 10px 32px;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 17px;
+    background-color: rgb(7, 45, 85);
+    cursor: pointer;
+    transition: .5s ease all;
+}
+.enterprice button:hover{
+    background-color: rgb(24, 80, 139);
+}
+/* enterprice end */
+
+/* effects start */
+.effects{
+    font-family: 'poppins';
+    margin-bottom: 100px;
+}
+.effects h2{
+    text-align: center;
+    color: var(--title-color);
+    margin-bottom: 70px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+}
+.effects_about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.enterpreneur_list{
+    list-style: none;
+}
+.enterpreneur_item{
+    margin-bottom: 50px;
+}
+.enterpreneur_item p{
+    padding-right: 70px;
+}
+.Enterpreneur{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.Enterpreneur img{
+    margin-right: 14px;
+}
+/* effects end */
+
+
+/* questions start */
+.questions{
+    font-family: 'poppins';
+    margin-bottom: 100px;
+}
+.questions h2{
+    text-align: center;
+    color: var(--title-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    margin-bottom: 25px;
+}
+.question_title{
+    text-align: center;
+    color: var(--title-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 80px;
+}
+.question_list img{
+    margin-right: 20px;
+}
+.question_item{
+    border-bottom: 1px solid rgba(166, 166, 166, 0.593);
+    list-style: none;
+    padding: 25px 0;
+    display: flex;
+}
+.question_item1{
+    border-bottom: 1px solid rgba(166, 166, 166, 0.593);
+    list-style: none;
+    padding: 25px 0;
+}
+.ques{
+    display: flex;
+    margin-bottom: 30px;
+}
+/* questions end */
