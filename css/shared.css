@@ -300,6 +300,7 @@
     display: block;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 30px;
 }
 .price{
     display: block;
